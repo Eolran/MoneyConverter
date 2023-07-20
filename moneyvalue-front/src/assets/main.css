@@ -1,0 +1,66 @@
+@import './base.css';
+
+body{
+	background: #93acd8;
+	color: #000;
+}
+
+.row{
+	width: 100%;
+}
+.title-container{
+	margin-bottom: 25px;
+	margin-left: 0;
+	text-align: center;
+	.title{
+		margin-right: 15px;
+		text-align: left;
+		color: #1d2f50;
+	}
+}
+
+.select-country{
+	width: 10em;
+	height: 3em;
+	background: white;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-top: 35px;
+}
+
+
+h2{
+	color: #1d2f50;
+}
+
+.country-name{
+	display: inline-block;
+}
+.country-flag{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 12px;
+}
+
+.main-container{
+	width: 800px;
+	position: absolute;
+	border-radius: 10px;
+	padding: 50px;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-40%);
+	background: white;
+	box-shadow: 0 12px 10px -6px #1d2f50;
+}
+
+.currency-input{
+	width: 70%;
+	margin-right: 5px;
+	font-size: 20px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	padding-left: 10px;
+}
