@@ -25,5 +25,13 @@ class CurrencySeeder extends Seeder
             'name' => 'Bitcoin',
             'currency' => 'BTC',
         ]);
+        DB::table('currencies')->insert([
+            'name' => 'Ethereum',
+            'currency' => 'ETH',
+        ]);
+        DB::table('currencies')->insert([
+            'name' => 'Pesos',
+            'currency' => 'PES',
+        ]);
     }
 }
