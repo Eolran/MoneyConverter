@@ -16,3 +16,4 @@ And let's proceed to the proper Readme.md inside thoses two new folders.
 ## Roadmap
 1. Add more style to the existant pages.
 2. Secure the administrators requests.
+3. Add the form to create a currency from the front-end
