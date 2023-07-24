@@ -17,3 +17,4 @@ And let's proceed to the proper Readme.md inside thoses two new folders.
 1. Add more style to the existant pages.
 2. Secure the administrators requests.
 3. Add the form to create a currency from the front-end
+4. Add th counter to see each time a conversion pair is used
