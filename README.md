@@ -7,7 +7,7 @@ As it, start by opening two commands prompts, and in each one, write:
 
 ```cd moneyvalue-back```
 
-```code cd moneyvalue-front```
+```cd moneyvalue-front```
 
 And let's proceed to the proper Readme.md inside thoses two new folders.
 
