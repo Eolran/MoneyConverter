@@ -1,5 +1,5 @@
 # Getting Started
-This project is a simple Laravel application that demonstrates how to generate a .env and vendor file.
+This project show you how to start the Laravel back-end application to start the MoneyValue project.
 
 ## Prerequisites
 You must have PHP 7.3 or higher installed.
