@@ -1,11 +1,11 @@
-<script setup>
-import Converter from './components/Converter.vue'
-</script>
-
 <template>
- <main>
-    <Converter />
-  </main>
+  <v-layout>
+    <v-main>
+      <v-container>
+        <router-view />
+      </v-container>
+    </v-main>
+  </v-layout>
 </template>
 
 <style scoped>

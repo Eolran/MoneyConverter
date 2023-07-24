@@ -16,7 +16,10 @@ return new class extends Migration
             $table->string('from');
             $table->string('to');
             $table->float('rate', 8, 2);
-            $table->string('count');
+            $table->integer('count') ->default(0);
+
+            $table->foreign('from')->references('currency')->on('currencies')->onDelete('cascade');
+            $table->foreign('to')->references('currency')->on('currencies')->onDelete('cascade');
         });
     }
 

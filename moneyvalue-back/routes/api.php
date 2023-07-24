@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CurrencyController;
+use App\Http\Controllers\PairsController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +22,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/currencies', [CurrencyController::class, 'show']);
+Route::get('/pairs', [PairsController::class, 'show']);
+
+Route::post('/login', [UserController::class, 'login']);
+
+Route::get('/deleteCurr/{id}', [CurrencyController::class, 'destroy']);
+Route::get('/deletePair/{id}', [PairsController::class, 'destroy']);
+Route::post('/updatePair/{id}', [PairsController::class, 'update']);
+Route::post('/createCurrency', [CurrencyController::class, 'store']);
+Route::post('/createPair', [PairsController::class, 'store']);

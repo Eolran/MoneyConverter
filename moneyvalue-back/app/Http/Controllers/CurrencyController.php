@@ -6,6 +6,7 @@ use App\Models\Currency;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCurrencyRequest;
 use App\Http\Requests\UpdateCurrencyRequest;
+use Illuminate\Support\Facades\DB;
 use Response;
 
 class CurrencyController extends Controller
@@ -36,7 +37,12 @@ class CurrencyController extends Controller
      */
     public function store(StoreCurrencyRequest $request)
     {
-        //
+        $formData = json_decode($request->getContent());
+        DB::table('currencies')->insert([
+            'name' => $formData->name,
+            'currency' => $formData->code,
+        ]);
+        return response("Ajout réussi");
     }
 
     /**
@@ -66,8 +72,9 @@ class CurrencyController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Currency $currency)
+    public function destroy($id)
     {
-        //
+        Currency::find($id) -> delete();
+        return response("Delete réussi");
     }
 }
